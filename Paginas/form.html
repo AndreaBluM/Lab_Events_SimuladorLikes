@@ -13,11 +13,18 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light px-3">
+        <a class="navbar-brand fw-bold fs-3" href="#" style="color: #D4A373;">Mini</a>
+        <div class="ms-auto">
+            <a href="" class="text-nav">Feed</a>
+            <a href="form.html"><button class="boton btn btn-primary">Crear publicación</button></a>
+        </div>
+    </nav>
     <p id="titulo-form" class="fs-1 text-center titulo-form mt-5">CREANDO PUBLICACIÓN</p>
-    <form class="was-validated container my-5">
+    <form id="form-nueva-pub" class="was-validated container my-5">
         <div class="row">
             <div class="mb-3 col-6">
-                <label for="validacionTitulo" class="form-label fw-bold">Título para la publicación</label>
+                <label for="validacionTitulo" class="form-label fw-bold label-form">Título</label>
                 <input type="text" class="form-control" id="validacionTitulo" value="" required>
                 <div class="invalid-feedback">
                     Este campo es necesario
@@ -25,14 +32,14 @@
             </div>
 
             <div class="mb-3 col-6">
-                <label for="validacionFile" class="form-label fw-bold">Imagen de la publicación</label>
+                <label for="validacionFile" class="form-label fw-bold label-form">Imagen</label>
                 <input type="file" class="form-control" id="validacionFile" aria-label="file example" required>
-                <div class="invalid-feedback">Este campo es obligatorio</div>
+                <div id="invalid-file" class="invalid-feedback">Este campo es obligatorio</div>
             </div>
         </div>
 
         <div class="mb-3">
-            <label for="validacionTextarea" class="form-label fw-bold">Descripción de la publicación</label>
+            <label for="validacionTextarea" class="form-label fw-bold label-form">Descripción</label>
             <textarea class="form-control" id="validacionTextarea"
                 placeholder="Escribe aquí el texto para tu publicación" required></textarea>
             <div class="invalid-feedback">
@@ -48,6 +55,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
         crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../Js/app.js"></script>
 </body>
 
 </html>
