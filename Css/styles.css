@@ -1,54 +1,58 @@
 /* Nav bar */
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-nav{
+nav {
     font-family: 'Pacifico', cursive;
 }
-.boton{
+
+.boton {
     font-family: 'Pacifico', cursive;
     border: none;
     background-color: #CCD5AD;
     color: #221b13;
     padding: 12px;
 }
-.boton:hover{
+
+.boton:hover {
     background-color: #E9EDC9;
     color: #d4a373;
 }
+
 .navbar a,
 .navbar button {
-  font-size: 20px;
+    font-size: 20px;
 }
-.text-nav{
+
+.text-nav {
     text-decoration: none;
     margin-right: 20px;
     color: #d4a373;
-    
+
 }
-.text-nav:hover{
+
+.text-nav:hover {
     color: black;
 }
-main{
+
+main {
     margin: 0;
-  padding: 0;
-  height: 100vh;
-  display: flex;
-  justify-content: center; /* Centrado horizontal */
-  align-items: center;     /* Centrado vertical */
-  background-color: #ffffff;
+    padding: 0;
+    background-color: #ffffff;
 }
+
 #contenedor-publicaciones {
-  width: 80vw;             /* 80% del ancho de la pantalla */
-  height: 80vh;            /* 80% de la altura de la pantalla */
-  background-color: #FEFAE0;
-  border-radius: 10px;
-  padding: 20px;
-  overflow-y: auto;        /* scroll si hay muchas cards */
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
+    width: 80vw;
+    /* 80% del ancho de la pantalla */
+    height: 100vh;
+    /* 80% de la altura de la pantalla */
+    background-color: #FEFAE0;
+    border-radius: 10px;
+    padding: 20px;
+    overflow-y: auto;
+    /* scroll si hay muchas cards */
+    gap: 16px;
 }
 
 /*-------------------------------------------
@@ -62,3 +66,58 @@ main{
 .label-form {
     color: #d4a373;
 }
+
+/*-------------------------------------------
+# Estilos de las cards
+-------------------------------------------*/
+
+:root {
+    /* CSS HEX */
+    --tea-green: #ccd5aeff;
+    --beige: #e9edc9ff;
+    --cornsilk: #fefae0ff;
+    --papaya-whip: #faedcdff;
+    --buff: #d4a373ff;
+
+    /* CSS HSL */
+    --tea-green: hsla(74, 32%, 76%, 1);
+    --beige: hsla(67, 50%, 86%, 1);
+    --cornsilk: hsla(52, 94%, 94%, 1);
+    --papaya-whip: hsla(43, 82%, 89%, 1);
+    --buff: hsla(30, 53%, 64%, 1);
+}
+
+
+.card-body {
+    background-color: var(--buff);
+}
+
+.card {
+    flex: content;
+    align-items: center;
+    background-color: var(--papaya-whip);    
+}
+
+.card>img {
+    width: 50%;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 60px;
+    margin-bottom: 60px;    
+}
+
+.card-title{
+    font-family: 'Pacifico', cursive;
+}
+
+.card-text{
+    font-family: "Poppins", sans-serif;
+}
+
+.btn-primary:active{
+    border: none;
+    background-color: #CCD5AD;
+    color: #221b13;
+    padding: 12px;
+}
+
