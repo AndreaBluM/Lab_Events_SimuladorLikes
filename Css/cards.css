@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    /* CSS HEX */
+    --tea-green: #ccd5aeff;
+    --beige: #e9edc9ff;
+    --cornsilk: #fefae0ff;
+    --papaya-whip: #faedcdff;
+    --buff: #d4a373ff;
+
+    /* CSS HSL */
+    --tea-green: hsla(74, 32%, 76%, 1);
+    --beige: hsla(67, 50%, 86%, 1);
+    --cornsilk: hsla(52, 94%, 94%, 1);
+    --papaya-whip: hsla(43, 82%, 89%, 1);
+    --buff: hsla(30, 53%, 64%, 1);
+}
+
+.card-body {
+    background-color: var(--buff);
+}
+
+.card {
+    flex: content;
+    align-items: center;
+    background-color: var(--cornsilk);    
+}
+
+.card>img {
+    width: 2rem;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.card-title{
+    font-family: 'Pacifico', cursive;
+}
+
+.btn-primary {
+    background-color: var(--papaya-whip);
+    color: black;
+    border-color: var(--cornsilk);
+    font-family: 'Pacifico', cursive;
+}
+
+.btn-primary:hover {
+    background-color: var(--tea-green);
+    border-color: var(--beige);
+    color:rgb(63, 63, 63);
+}
