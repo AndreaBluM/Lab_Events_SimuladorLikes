@@ -23,7 +23,7 @@
 .card {
     flex: content;
     align-items: center;
-    background-color: var(--cornsilk);    
+    background-color: var(--papaya-whip);    
 }
 
 .card>img {
@@ -31,22 +31,20 @@
     margin-left: 50px;
     margin-right: 50px;
     margin-top: 60px;
-    margin-bottom: 60px;
+    margin-bottom: 60px;    
 }
 
 .card-title{
     font-family: 'Pacifico', cursive;
 }
 
-.btn-primary {
-    background-color: var(--papaya-whip);
-    color: black;
-    border-color: var(--cornsilk);
-    font-family: 'Pacifico', cursive;
+.card-text{
+    font-family: "Poppins", sans-serif;
 }
 
-.btn-primary:hover {
-    background-color: var(--tea-green);
-    border-color: var(--beige);
-    color:rgb(63, 63, 63);
+.btn-primary:active{
+    border: none;
+    background-color: #CCD5AD;
+    color: #221b13;
+    padding: 12px;
 }
